@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if username == 'admin' %}
+        <div id="grid-item">
+            <h1 style="color: rgb(255, 255, 255);">Admin Dashboard</h1>
+        </div>
+
+        <div id="grid-item">
+            <h3 style="color: rgb(170, 172, 172);">Welcome my fellow penguin!</h3>
+        </div>
+
+        <div id="grid-item">
+            <h3 style="color: rgb(244, 234, 245);">It is time to summon the penguins!</h3>
+        </div>
+
+        <div id="grid-item">
+            <h2 style="color: rgb(170, 172, 172);">{{ flag }}</h3>
+        </div>
+
+        <div id="grid-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/e0jbHCZ4I6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    {% else %}
+        <div id="grid-item">
+            <h1 style="color: rgb(255, 255, 255);">Guest Dashboard</h1>
+        </div>
+
+        <div id="grid-item">
+            <h3 style="color: rgb(170, 172, 172);">Sorry human, penguinese only!</h3>
+        </div>
+
+        <div id="grid-item">
+            <img src="/images/pingu-sad.gif" />
+        </div>
+    {% endif %}
+{% endblock %}
