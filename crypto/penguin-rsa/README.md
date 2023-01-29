@@ -12,13 +12,13 @@
 
 ## Description
 
-An adélie penguin came waddling over to you excitedly holding a toshiba laptop. On the laptop they showed some `python` code that they wrote that implemented the RSA asymmetric encryption algorithm *securely* and *two times faster than other implementations*. The penguin then sent you file named `out.txt` that contained the RSA public key (`n`, `e`) and an encrypted flag (`ct`). The penguin and then stared deep into your eyes and said while flapping their wings excitedly:
+An adélie penguin waddled over to you excitedly holding a toshiba laptop. On the laptop they showed some `python` code that they wrote that implemented the RSA asymmetric encryption algorithm *securely* and *two times faster than other implementations*. The penguin then sent you file named `out.txt` that contained the RSA public key (`n`, `e`) and an encrypted flag (`ct`). The penguin and then stared deep into your eyes and said while flapping their wings excitedly:
 
 > waa waa wa wa wa
 
 Which translated to:
 
-> Can you decrypt my message that I encrypted using my RSA algorithm?
+> Can you decrypt the penguin's message that was encrypted using their RSA algorithm?
 
 To help solve this challenge, you will need to write a small python program to solve this challenge (you can adapt the code provided in `penguinrsa.py`). It is highly recommended to copy the following `long_to_bytes` function that converts numbers into bytes for printing the flag.
 
@@ -57,7 +57,8 @@ Reading the provided code, we can see that one of the prime numbers for generati
 
 *solution code*
 ```python
-from Crypto.Util.number import long_to_bytes
+# If using pycryptodome you can just import long_to_bytes instead of using the provided code
+# from Crypto.Util.number import long_to_bytes
 from binascii import unhexlify
 
 def long_to_bytes (val, endianness='big'):
