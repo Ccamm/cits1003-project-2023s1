@@ -41,18 +41,26 @@ Use the following template for creating the `README.md` for challenges.
 # Challenge
 
 **Name:** FILL IN
+
 **Category:** FILL IN
+
 **Difficulty:** FILL IN
-**Author:** FILL IN
+
 **Flag:** FILL IN
+
+---
 
 ## Description
 
 FILL IN
 
+---
+
 ## Solution
 
 FILL IN
+
+---
 
 ## [Optional] How to run
 
