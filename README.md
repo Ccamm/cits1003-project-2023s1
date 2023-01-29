@@ -1,4 +1,4 @@
-# ISS CTF 2022 Challenge Files
+# CITS1003 CTF Assignment 2023 Challenge Files
 
 Here will be the location of the challenge files for the upcoming ISS CTF in 2022.
 
