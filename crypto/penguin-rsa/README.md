@@ -20,26 +20,9 @@ Which translated to:
 
 > Can you decrypt the penguin's message that was encrypted using their RSA algorithm?
 
-To help solve this challenge, you will need to write a small python program to solve this challenge (you can adapt the code provided in `penguinrsa.py`). It is highly recommended to copy the following `long_to_bytes` function that converts numbers into bytes for printing the flag.
+To help solve this challenge, a template for solving this challenge is provided (`solvetemplate.py`).
 
-
-```python
-# Stolen from https://stackoverflow.com/questions/8730927/convert-python-long-int-to-fixed-size-byte-array
-from binascii import unhexlify
-
-def long_to_bytes(val, endianness='big'):
-    width = val.bit_length()
-    width += 8 - ((width % 8) or 8)
-    fmt = '%%0%dx' % (width // 4)
-    s = unhexlify(fmt % val)
-
-    if endianness == 'little':
-        s = s[::-1]
-
-    return s
-```
-
-In addition, to help solve this challenge the RSA key generation is explained below:
+In addition, the RSA key generation algorithm is explained below:
 
 1. Pick to random prime numbers called `p` and `q` (*keep these secure*).
 2. Calculate `n = p x q`.
