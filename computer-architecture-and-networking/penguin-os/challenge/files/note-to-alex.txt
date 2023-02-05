@@ -1,0 +1,12 @@
+Hi Alex,
+
+To stop you from pestering me to waddle over to your desk to login with my account, I have configured a script execution folder.
+
+You can place your scripts in the folder /opt/admin-scripts and I have configured the server to run those scripts using my account every minute.
+
+The output of the scripts are placed in /opt/admin-scripts-output. However, to prevent sensitive information leaking I delete the output after 30 seconds.
+
+Now stop annoying me and trying to bribe me with fish to do your work!
+
+Cheers,
+Mumble

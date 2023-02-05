@@ -1,0 +1,5 @@
+Hello all of my flipper friends!
+
+If you want to access my Penguin OS, you will need to SSH with the following credentials.
+
+penguinusr:UWA{fTpLipP3r5}
