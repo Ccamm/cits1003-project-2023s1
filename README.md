@@ -1,6 +1,6 @@
 # CITS1003 CTF Assignment 2023 Challenge Files
 
-Here will be the location of the challenge files for the upcoming ISS CTF in 2022.
+Here will be the location of the challenge files for CITS1003 Semester 1 2023 assignment.
 
 # How to add challenges
 
