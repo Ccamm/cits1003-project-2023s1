@@ -28,7 +28,7 @@ When submitting the flag, wrap the message with `UWA{message here}`.
 
 ## Hint
 
-Look at for repeated patterns within the encoded text. *Does it remind you of a encoding method that was first used in the 19th century?*
+Look at for repeated patterns within the encoded text. *Does it remind you of an encoding method that was first used in the 19th century?*
 
 ---
 
