@@ -26,6 +26,12 @@ When submitting the flag, wrap the message with `UWA{message here}`.
 
 ---
 
+## Hint
+
+Look at for repeated patterns within the encoded text. *Does it remind you of a encoding method that was first used in the 19th century?*
+
+---
+
 ## Solution
 
 There are two patterns written on the whiteboard, `wa` and `woo`. This is very similar to **morse code** that uses the characters `.` and `-` for encoding messages.
