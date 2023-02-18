@@ -77,6 +77,10 @@ Legit just use `ssh` to connect to the server as `penguinusr`.
 
 Now that you have access to the server, use the [`linpeas.sh`](https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh) enumeration tool from [PEASS-ng](https://github.com/carlospolop/PEASS-ng) to see if you can find a *password* for the account named `alex`.
 
+*The server is configured to only allow creating files and folders in the `/tmp` folder.*
+
+**Warning: Files are wiped every 5 minutes from the `/tmp` folder**
+
 ## Hint
 
 The task for this challenge is to figure out a way to get `linpeas.sh` onto the server. Maybe there is a *tool* for downloading files that is on the Linux server?
@@ -109,15 +113,13 @@ Once the file is downloaded, first set it to be executable `chmod +x linpeas.sh`
 
 `mumble` left a passive aggressive note to `alex` that can be read at `/home/alex/note-to-alex.txt`.
 
-*Try and figure out a way to execute commands as `mumble` and read the final flag at `/home/mumble/flag4.txt`.*
+*Based on the note, can you figure out a way to read the final flag at `/home/mumble/flag4.txt`.*
 
 ---
 
 ## Hint
 
-The source code of the scheduled task is located at `/home/mumble/execute-scripts.sh`.
-
-**`alex` can write files in `/opt/admin-scripts`!**
+You will need to write a script to read `/home/mumble/flag4.txt`. Analyse the note and figure out how to get your script to execute as the user `mumble`.
 
 ---
 
