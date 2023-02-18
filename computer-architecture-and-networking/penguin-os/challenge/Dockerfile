@@ -59,5 +59,9 @@ RUN chown root:mumble ${USR3DIR}/flag4.txt && chmod 440 ${USR3DIR}/flag4.txt
 RUN mkdir -p /opt/admin-scripts && chown mumble:alex /opt/admin-scripts && chmod 770 /opt/admin-scripts
 RUN mkdir -p /opt/admin-scripts-output && chown mumble:alex /opt/admin-scripts-output && chmod 750 /opt/admin-scripts-output
 
+RUN echo "*** add clean up scripts ***"
+COPY files/wipe_tmp.sh /root/wipe_tmp.sh
+RUN chmod u+x /root/wipe_tmp.sh
+
 EXPOSE 20 22 2121
 CMD ["/usr/bin/supervisord"]
