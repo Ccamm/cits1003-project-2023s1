@@ -31,6 +31,8 @@ To see the available options for extracting files type the following command.
 steghide --help
 ```
 
+**You will need the `-p` option to set an empty password!**
+
 ## Solution
 
 Reading the help guide for `steghide`, the following command will extract the secret message with an empty passcode.
