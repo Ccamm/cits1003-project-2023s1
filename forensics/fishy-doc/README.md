@@ -18,6 +18,12 @@ Mumble accidentally opened a document that Pingu sent. Nekminit Mumble's compute
 
 ---
 
+## Hint
+
+If you are not sure where to begin, maybe ask ChatGPT about **macros**.
+
+---
+
 ## Solution
 
 One of the most commonly methods of initial compromise using document files is by writing **malicious macros**. There are multiple ways to view Macros that students could use to view the macro.
