@@ -56,7 +56,7 @@ Viewing the [Security Advisories for Directus](https://github.com/directus/direc
 
 ---
 
-## Challenge 2
+# Challenge 2
 
 **Name:** Arctic File Storage Part 2: Rewind Rebind
 
