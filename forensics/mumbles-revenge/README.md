@@ -26,6 +26,14 @@ Your antivirus software will probably flag either the **ImportantForPingu.zip** 
 
 ---
 
+## Hint
+
+1. Unzip `ImportantForPingu.zip` and use tools/commands to analyse the `.lnk` file.
+2. From the `.lnk` file, you will see it reference a malicious executable. Download and take a closer look at the `.exe` file.
+3. Inside the `.exe` you will find the flag. You can use tools such as [`dotPeek`](https://www.jetbrains.com/decompiler/), but `cat` will do the trick.
+
+---
+
 ## Solution
 
 There are two parts to this challenge, the first part is analysing the malicious short cut that Mumble used as the initial access into Pingu's computer. First analyse the `.lnk` file by using a hex viewer. Below I just used `xxd`.
