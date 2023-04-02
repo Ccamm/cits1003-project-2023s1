@@ -20,7 +20,7 @@ Skipper has developed a *secure website* to protect his **cookie**!
 
 ## Hint
 
-Some **cookies** you cannot eat.
+Some **cookies** you cannot eat. The **cookies** you cannot eat are used by websites use for **identification**. You should **inspect** the site closely.
 
 ---
 
