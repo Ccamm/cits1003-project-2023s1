@@ -78,7 +78,7 @@ There is a secret file located at `/localonly/flag.txt` on the website. However,
 
 ## Hint
 
-Don't forgot the port that the server is listening on is **`3000`**. You need to include this in your URL, for an example `http://localhost:3000/localonly/flag.txt`.
+Don't forget the port that the server is listening on is **`3000`**. You need to include this in your URL, for an example `http://localhost:3000/localonly/flag.txt`.
 
 ---
 
@@ -86,7 +86,7 @@ Don't forgot the port that the server is listening on is **`3000`**. You need to
 
 Reading my [SSRF vulnerability report](https://github.com/directus/directus/security/advisories/GHSA-j3rg-3rgm-537h), Directus was vulnerable to a SSRF forgery bypass called [DNS rebinding](https://en.wikipedia.org/wiki/DNS_rebinding). The DNS rebinding attack works by having a DNS server that resolves the same domain address to two different IP addresses quickly.
 
-In the report, I gave the following domain `7f000001.8efa468e.rbndr.us` that will resolve between `142.250.70.142` (google.com) and **`127.0.0.1`**. Therefore, if you spam submitting the following URL it will eventually save the flag.
+In the report, I gave the following domain `7f000001.8efa468e.rbndr.us` that will resolve to either `142.250.70.142` (google.com) or **`127.0.0.1`**. Therefore, if you spam submitting the following URL it will eventually save the flag.
 
 ```
 http://7f000001.8efa468e.rbndr.us:3000/localonly/flag.txt
