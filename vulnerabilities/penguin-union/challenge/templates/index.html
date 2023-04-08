@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>🐧 The Penguin Union 🐧</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/main.css" />
+        <script src="/js/jquery-3.6.0.min.js"></script>
+        <script src="/js/particles.min.js"></script>
+    </head>
+
+    <body>
+        <section>
+            <div id="grid-item">
+                <h1 style="color: rgb(21, 255, 0);">🐧 Join The Penguin Union Today 🐧</h1>
+            </div>
+            <div id="grid-item">
+                <h2 style="color: rgb(234, 0, 255)">Penguins It Is Time To Rise Up!</h2>
+            </div>
+            <div id="grid-item">
+                <p style="color:rgb(0, 255, 234)">My penguin brothers and sisters, for too long the humans have stolen our fish!<br/>
+                Those pesky humans don't even know how to appreciate fish properly! Look at this monstrosity!
+                </p>
+            </div>
+            <div id="grid-item">
+                <img src="/images/fishandchips.jpg" style="width: 200px"/>
+            </div>
+            <div id="grid-item">
+                <p style="color:rgb(183, 0, 255)">Bleh that's disgusting!<br/>
+                We all know the best way to eat fish is raw straight from the ocean!
+                </p>
+            </div>
+            <div id="grid-item">
+                <p style="color:rgb(0, 255, 234)">It's time to form a <b style="color:rgb(234, 0, 255)">UNION</b> to take our fish back!</p>
+            </div>
+            <div id="grid-item">
+                <h2 style="color: rgb(234, 0, 255)">Check out from penguins why they have joined!</h2>
+            </div>
+            <form action="/" method="get">
+                <div id="grid-item">
+                    <input type="text" name="query" placeholder="">
+                </div>
+                <div id="grid-item">
+                    <input type="submit" value="Search">
+                </div>
+            </form>
+            {% if error %}
+                <div id="grid-item"><p style="color: red;">{{error}}</p></div>
+            {% endif %}
+            <div id="grid-item">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Reason</th>
+                    </tr>
+                    {% for rego in registrations %}
+                        <tr>
+                            <td>
+                                {{rego[0]}}
+                            </td>
+                            <td>
+                                {{rego[1]}}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            <div id="grid-item">
+                <h2 style="color: rgb(0, 255, 242)">Send your application to join@thepenguinunion.aq and join the Penguin Union!</h2>
+            </div>
+        </section>
+
+        <div class="particle-container"></div>
+        <script src="/js/main.js"></script>
+    </body>
+</html>
