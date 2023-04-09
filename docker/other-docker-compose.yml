@@ -1,0 +1,38 @@
+version: '3.2'
+
+services:
+  flippinauth:
+    restart: always
+    build:
+      context: ../crypto/flippin-auth/challenge
+      dockerfile: ./Dockerfile
+    container_name: 'flippin-auth-container'
+    ports:
+      - '3001:3000'
+    
+  skipperscookie:
+    restart: always
+    build:
+      context: ../vulnerabilities/skippers-cookies/challenge
+      dockerfile: ./Dockerfile
+    container_name: 'skippers-cookies-container'
+    ports:
+      - '3002:80'
+
+  arcticfilestorage:
+    restart: always
+    build:
+      context: ../vulnerabilities/arctic-file-storage/challenge
+      dockerfile: ./Dockerfile
+    container_name: 'arctic-file-storage-container'
+    ports:
+      - '3000:3000'
+
+  penguinunion:
+    restart: always
+    build:
+      context: ../vulnerabilities/penguin-union/challenge
+      dockerfile: ./Dockerfile
+    container_name: 'penguin-union-container'
+    ports:
+      - '3003:1337'

@@ -1,0 +1,14 @@
+version: '3.2'
+
+services:
+  penguinos:
+    restart: always
+    build:
+      context: ../computer-architecture-and-networking/penguin-os/challenge
+      dockerfile: ./Dockerfile
+    container_name: 'penguin-os-container'
+    ports:
+      - '20:20'
+      - '2222:22'
+      - '2121:2121'
+      - '30000-30100:30000-30100'
