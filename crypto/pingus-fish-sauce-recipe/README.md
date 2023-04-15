@@ -4,7 +4,7 @@
 
 **Category:** Cryptography
 
-**Difficulty:** Medium
+**Difficulty:** Easy
 
 **Flag:** `UWA{pL34s3_sToP_tH3_cYb3r_cH3f_ch4lL3nG3s!1!}`
 
